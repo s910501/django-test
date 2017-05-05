@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+django_polls.egg-info/PKG-INFO
+django_polls.egg-info/SOURCES.txt
+django_polls.egg-info/dependency_links.txt
+django_polls.egg-info/top_level.txt
+migrations/0001_initial.py
+migrations/__init__.py

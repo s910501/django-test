@@ -17,6 +17,12 @@ from django.conf.urls import url,include
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^author-polls/', include('polls.urls', namespace='author-polls')),
+    url(r'^publisher-polls/', include('polls.urls', namespace='publisher-polls')),
+
+    ## 额外参数
+    #url(r'^news/', include('news.urls'),{blogid:3}),
+    url(r'^news/', include('news.urls')),
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
 ]

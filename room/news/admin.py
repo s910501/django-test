@@ -5,6 +5,7 @@ from . import models
 
 admin.site.register(models.Article)
 admin.site.register(models.Person)
+admin.site.register(models.Person2)
 admin.site.register(models.Group)
 admin.site.register(models.Membership)
 admin.site.register(models.Topping)
@@ -16,3 +17,6 @@ admin.site.register(models.Restaurant)
 admin.site.register(models.MyPlace)
 admin.site.register(models.Student)
 
+admin.site.register(models.Author)
+admin.site.register(models.Blog)
+admin.site.register(models.Entry)

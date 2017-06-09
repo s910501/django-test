@@ -24,5 +24,6 @@ urlpatterns = [
     #url(r'^news/', include('news.urls'),{blogid:3}),
     url(r'^news/', include('news.urls')),
     url(r'^polls/', include('polls.urls')),
+    url(r'^web/', include('web.urls')),
     url(r'^admin/', admin.site.urls),
 ]

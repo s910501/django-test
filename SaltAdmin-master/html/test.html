@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>SaltStack Admin</title>
+<meta name="description" content="Luxiaok" />
+<meta name="keywords" content="Luxiaok" />
+<!-- We need to emulate IE7 only when we are to use excanvas -->
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<![endif]-->
+<!-- Favicons --> 
+<link rel="shortcut icon" type="image/png" href="/static/images/favicons/favicon.png"/>
+<link rel="icon" type="image/png" href="/static/images/favicons/favicon.png"/>
+<link rel="apple-touch-icon" href="/static/images/favicons/apple.png" />
+<!-- Main Stylesheet --> 
+<link rel="stylesheet" href="/static/css/main.css" type="text/css" />
+<!-- Your Custom Stylesheet --> 
+<link rel="stylesheet" href="/static/css/custom.css" type="text/css" />
+<!-- jQuery with plugins -->
+<script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+<!--
+Could be loaded remotely from Google CDN : 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+-->
+<!-- Superfish Navigation -->
+<script type="text/javascript" src="/static/js/jquery.superfish.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.supersubs.min.js"></script>
+<!-- 顶部导航和底部隐藏的导航的特效输出 -->
+<script type="text/javascript" src="/static/js/nav.show.menu.js"></script>
+</head>
+<body>
+	<!-- Header -->
+	<%include file="header.html" args="curM='test',ShowName=ShowName,uid=uid" />
+	<!-- End of Header -->
+	<!-- Page title -->
+	<div id="pagetitle">
+		<div class="wrapper">
+			<h1>404</h1>
+			<!-- Quick search box -->
+			<form action="" method="get"><input class="" type="text" id="q" name="q" /></form>
+		</div>
+	</div>
+	<!-- End of Page title -->
+	
+	<!-- Page content -->
+	<div id="page">
+		<!-- Wrapper -->
+		<div class="wrapper">
+	      <div>
+	          <ul>
+                  <li><a href="https://github.com/luxiaok/SaltAdmin" target="_blank">建议反馈</a></li>
+                  <li><a href="https://github.com/luxiaok/SaltAdmin" target="_blank">Bug提交</a</li>
+                  <li><a href="https://github.com/luxiaok/SaltAdmin" target="_blank">加入开发</a></li>
+              </ul>
+              <h5>运维技术圈（微信扫一扫）</h5>
+              <p><img src="/static/images/ops_circle_qrcode.jpg" width="200"></p>
+              <h5>Design By XK-Studio</h5>
+	      </div>
+		</div>
+		<!-- End of Wrapper -->
+	</div>
+	<!-- End of Page content -->
+<%include file="footer.html" />	
+</body>
+</html>

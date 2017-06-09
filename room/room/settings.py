@@ -12,6 +12,18 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 
+# 邮件配置
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'hoolai_info@163.com'
+EMAIL_HOST_PASSWORD = 's6521205'
+EMAIL_SUBJECT_PREFIX = u'[Hoolai]'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+#EMAIL_USE_TLS = True
+
+# 管理员站点
+SERVER_EMAIL = 'hoolai_error@163.com'
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -40,6 +52,7 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'news',
     'myapp',
+    'web',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +134,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/root/django-test/room/static'

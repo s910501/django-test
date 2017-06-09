@@ -1,0 +1,67 @@
+<!--
+<form action="/web/" method="post">
+    {% csrf_token %}
+    {{ form.as_p  }}
+    <input type="submit" value="Submit" />
+</form>
+-->
+
+<!--
+<form action="/web/" method="post">
+    {% csrf_token %}
+    {{ form.name_of_field_errors }}
+    <div class="fieldWrapper">
+        {{ form.subject.errors }}
+        {{ form.subject.label_tag }}
+        {{ form.subject }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.message.errors }}
+        {{ form.message.label_tag }}
+        {{ form.message }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.sender.errors }}
+        {{ form.sender.label_tag }}
+        {{ form.sender }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.cc_myself.errors }}
+        {{ form.cc_myself.label_tag }}
+        {{ form.cc_myself }}
+    </div>
+        <input type="submit" value="Submit" />
+</form>
+-->
+<form action="/web/" method="post">
+    {% csrf_token %}
+{% for field in form %}
+    <div class="fieldWrapper">
+        {{ field.errors }}
+        {{ field.label_tag }} {{ field }}
+        {% if field.help_text %}
+        <p class="help">{{ field.help_text|safe }}</p>
+        {% endif %}
+    </div>
+{% endfor %}
+        <input type="submit" value="Submit" />
+</form>
+
+<form action="/web/" method="post">
+    {% csrf_token %}
+    {{ form1.as_table }}
+</form>
+
+
+
+<form method="post" action="">
+    {{ form1.management_form }}
+    {% for form in form1 %}
+        {{ form }}
+    {% endfor %}
+</form>
+
+
+
+
+
